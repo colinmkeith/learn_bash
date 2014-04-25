@@ -21,10 +21,10 @@ In this case the shell expansion is a simple regexp search-and-replace using
 Putting all of that together
 
 
-````for file in $(find . -name '*.mak' -print); 
-    do
-      mv $file ${file/.mak/.mk};
-    done````
+````for file in $(find . -name '*.mak' -print);```` 
+````do````
+````  mv $file ${file/.mak/.mk};````
+````done````
 
 A. Using pipes:
 
